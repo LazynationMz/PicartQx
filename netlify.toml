@@ -1,0 +1,42 @@
+headers = []
+redirects = []
+
+[functions]
+
+  [functions."*"]
+
+[[plugins]]
+origin = "ui"
+package = "@netlify/plugin-lighthouse"
+
+  [plugins.inputs]
+
+[[plugins]]
+origin = "ui"
+package = "netlify-plugin-debug-cache"
+
+  [plugins.inputs]
+
+[[plugins]]
+origin = "ui"
+package = "@bharathvaj/netlify-plugin-airbrake"
+
+  [plugins.inputs]
+
+[build]
+publish = "/opt/build/repo"
+publishOrigin = "default"
+
+  [build.environment]
+
+  [build.processing]
+
+    [build.processing.css]
+
+    [build.processing.html]
+
+    [build.processing.images]
+
+    [build.processing.js]
+
+  [build.services]
